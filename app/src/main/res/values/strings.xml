@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">Aliance.Go</string>
+    <string name="MainSearchText1" translatable="false">Выберете</string>
+    <string name="MainSearchText2" translatable="false">Комплекс</string>
+    <string name="MainSearchText3" translatable="false">Тренеровок</string>
+    <string name="SearchButtonOne" translatable="false">Комплексный подход</string>
+    <string name="SearchButtonTwo" translatable="false">Прогрессивная тренеровка</string>
+    <string name="RunToday" translatable="false">Тренеровка на сегодня</string>
+    <string name="GoText" translatable="false">Приступим</string>
+    <string name="NameTrain" translatable="false">Названия упрожнения</string>
+    <string name="VideoTrain" translatable="false">Видео</string>
+    <string name="TimeName" translatable="false">Таймер</string>
+    <string name="TimeNumebr" translatable="false">45</string>
+</resources>
