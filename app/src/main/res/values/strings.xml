@@ -5,7 +5,7 @@
     <string name="MainSearchText3" translatable="false">Тренеровок</string>
     <string name="SearchButtonOne" translatable="false">Комплексный подход</string>
     <string name="SearchButtonTwo" translatable="false">Прогрессивная тренеровка</string>
-    <string name="RunToday" translatable="false">Тренеровка на сегодня</string>
+    <string name="RunToday" translatable="false">Тренировка на сегодня</string>
     <string name="GoText" translatable="false">Приступим</string>
     <string name="NameTrain" translatable="false">Названия упражнения</string>
     <string name="VideoTrain" translatable="false">Видео</string>
