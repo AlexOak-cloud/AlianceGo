@@ -10,20 +10,15 @@ public class Action {
     private int id;
     private String name;
     private String description;
-    private String path;
     private int time;
-    private File gif;
-
 
     @Override
     public String toString() {
-        return "Entity{" +
+        return "Action{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", path='" + path + '\'' +
                 ", time=" + time +
-                ", gif=" + gif +
                 '}';
     }
 
@@ -31,13 +26,13 @@ public class Action {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Action entity = (Action) o;
-        return id == entity.id && time == entity.time && Objects.equals(name, entity.name) && Objects.equals(description, entity.description) && Objects.equals(path, entity.path) && Objects.equals(gif, entity.gif);
+        Action action = (Action) o;
+        return id == action.id && time == action.time && Objects.equals(name, action.name) && Objects.equals(description, action.description);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, path, time, gif);
+        return Objects.hash(id, name, description, time);
     }
 
     public int getId() {
@@ -64,14 +59,6 @@ public class Action {
         this.description = description;
     }
 
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
     public int getTime() {
         return time;
     }
@@ -80,26 +67,22 @@ public class Action {
         this.time = time;
     }
 
-    public File getGif() {
-        return gif;
-    }
-
-    public void setGif(File gif) {
-        this.gif = gif;
-    }
-
-
-
     public Action() {
     }
 
-    public Action(int id, String name, String description, String path, int time, File gif) {
+    public Action(int id, String name, String description, int time) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.path = path;
         this.time = time;
-        this.gif = gif;
+    }
+
+    public List<Action> createActions(){
+        List<Action> actions = new ArrayList<>();
+        Action action = new Action(1,"name","description", 15);
+
+
+        return actions;
     }
 
 

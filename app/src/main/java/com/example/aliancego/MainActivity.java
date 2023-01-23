@@ -20,14 +20,12 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
 
-    private TextView qwe;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView qwe = findViewById(R.id.qwe);
-        Action action = new Action(1,"qwe","Anjumanija","asd",15,new File("asda"));
-        qwe.setText(action.toString());
+
     }
 
 

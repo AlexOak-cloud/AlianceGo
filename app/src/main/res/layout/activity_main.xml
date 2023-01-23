@@ -77,13 +77,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="qweq"
-        android:textColor="@color/white"
-        android:id="@+id/qwe"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
