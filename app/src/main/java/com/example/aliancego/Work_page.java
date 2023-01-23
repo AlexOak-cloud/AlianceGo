@@ -21,6 +21,9 @@ public class Work_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_page);
+
+
+        /** Код для примера будет отображаться в приложении -> (test) */
         Action action = new Action(1, "Анжумания", "Отжимайся 25 секунд", 25);
         Action action1 = new Action(2, "Бег на метсе", "Бегий 25 секунд", 25);
         Action action2 = new Action(3, "Пресс качать", "Прес качай  25 секунд", 25);
