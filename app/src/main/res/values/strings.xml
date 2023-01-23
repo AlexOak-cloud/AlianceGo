@@ -7,7 +7,7 @@
     <string name="SearchButtonTwo" translatable="false">Прогрессивная тренеровка</string>
     <string name="RunToday" translatable="false">Тренеровка на сегодня</string>
     <string name="GoText" translatable="false">Приступим</string>
-    <string name="NameTrain" translatable="false">Названия упрожнения</string>
+    <string name="NameTrain" translatable="false">Названия упражнения</string>
     <string name="VideoTrain" translatable="false">Видео</string>
     <string name="TimeName" translatable="false">Таймер</string>
     <string name="TimeNumebr" translatable="false">45</string>
