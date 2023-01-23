@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:backgroundTint="#000000"
-    tools:context=".work_page">
+    tools:context=".Work_page">
 
     <TextView
         android:id="@+id/textView3"
@@ -14,21 +14,31 @@
         android:layout_height="120sp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/main_fonts"
-        android:textAlignment="center"
         android:text="@string/RunToday"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
-/>
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/actionsList"
+        android:layout_width="match_parent"
+        android:layout_height="370sp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_marginHorizontal="30sp"
         android:layout_height="60dp"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/actionsList"
+        android:layout_marginHorizontal="30sp"
+
         android:fontFamily="@font/main_fonts"
         android:onClick="butClickTwo"
         android:text="@string/GoText"
-        android:textSize="24sp"
-        android:layout_marginTop="450sp"
-        />
+        android:textSize="24sp" />
 </RelativeLayout>

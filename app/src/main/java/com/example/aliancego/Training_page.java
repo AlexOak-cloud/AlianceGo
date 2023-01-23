@@ -2,11 +2,9 @@ package com.example.aliancego;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-public class training_page extends AppCompatActivity {
+public class Training_page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

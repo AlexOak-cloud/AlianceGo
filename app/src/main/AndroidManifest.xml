@@ -13,14 +13,14 @@
         android:theme="@style/Theme.AlianceGo"
         tools:targetApi="31">
         <activity
-            android:name=".training_page"
+            android:name=".Training_page"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".work_page"
+            android:name=".Work_page"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
