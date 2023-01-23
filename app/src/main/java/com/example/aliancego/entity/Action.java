@@ -1,6 +1,8 @@
 package com.example.aliancego.entity;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Action {
@@ -101,11 +103,6 @@ public class Action {
     }
 
 
-    public static void main(String[] args) {
-        Action action = new Action(1,"Анжумания","Нада анжуматься","C://User/asd",15,new File("asdasd"));
-
-
-    }
 
 
 
