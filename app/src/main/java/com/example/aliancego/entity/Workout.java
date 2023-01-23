@@ -86,4 +86,5 @@ public class Workout {
         this.date = date;
         this.actions = actions;
     }
+
 }

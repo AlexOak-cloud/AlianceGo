@@ -86,6 +86,8 @@ public class Action {
         this.gif = gif;
     }
 
+
+
     public Action() {
     }
 
@@ -97,4 +99,14 @@ public class Action {
         this.time = time;
         this.gif = gif;
     }
+
+
+    public static void main(String[] args) {
+        Action action = new Action(1,"Анжумания","Нада анжуматься","C://User/asd",15,new File("asdasd"));
+
+
+    }
+
+
+
 }
