@@ -77,15 +77,64 @@ public class Action {
         this.time = time;
     }
 
-    public List<Action> createActions(){
+    public List<Action> listWorkout1(){
         List<Action> actions = new ArrayList<>();
-        Action action = new Action(1,"name","description", 15);
 
+        Action jumpHand = new Action(11,"jumpHand","Прыжки с разведением рук", 45);
+        actions.add(jumpHand);
+
+        Action runPlace = new Action(12,"runPlace","Бег на месте, высоко подниая колено", 45);
+        actions.add(runPlace);
+
+        Action lyingJump = new Action(13,"lyingJump","Выпрыгивание с упора лежа", 45);
+        actions.add(lyingJump);
 
         return actions;
     }
 
 
+
+
+
+        public List<Action> listWorkout2() {
+            List<Action> actions2 = new ArrayList<>();
+
+            Action raiseLegsLyingDown = new Action(211, "raiseLegsLyingDown", "Поднятие ног лежа", 45);
+            actions2.add(raiseLegsLyingDown);
+
+            Action bicycle = new Action(212, "bicycle", "Велосипед", 45);
+            actions2.add(bicycle);
+
+            Action plankRunning = new Action(213, "plankRunning", "Бег в планке", 45);
+            actions2.add(plankRunning);
+
+            Action russianWiggle = new Action(214, "russianWiggle", "Русские покачивания", 45);
+            actions2.add(russianWiggle);
+
+            Action pelvicSwing = new Action(215, "pelvicSwing", "Раскачка таза", 45);
+            actions2.add(pelvicSwing);
+
+            Action bicycleSlow = new Action(216, "bicycleSlow", "Велосипед (очень медленно)", 45);
+            actions2.add(bicycleSlow);
+
+            Action twisting = new Action(217, "twisting", "Скручивание (пресс)", 45);
+            actions2.add(twisting);
+
+            Action liftingBody = new Action(218, "liftingBody", "Поднятие тело (лежа)", 45);
+            actions2.add(liftingBody);
+
+            Action LyingLegSwing = new Action(219, "LyingLegSwing", "Махи ногами лежа", 45);
+            actions2.add(LyingLegSwing);
+
+            Action handsLegs = new Action(220, "handsLegs", "Руки ноги", 45);
+            actions2.add(handsLegs);
+
+            Action frog = new Action(221, "frog", "Лягушка", 45);
+            actions2.add(frog);
+
+
+            return actions2;
+        }
 
 
 
