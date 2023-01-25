@@ -201,4 +201,21 @@ public class Action {
         return actions4;
     }
 
+
+
+
+    public List<Action> listWorkout5() {
+        List<Action> actions5 = new ArrayList<>();
+
+        Action quickRunInPlace = new Action(501, "quickRunInPlace", "Быстрый бег на месте", 45);
+        actions5.add(quickRunInPlace);
+
+        Action plank = new Action(502, "plank", "Планка", 45);
+        actions5.add(plank);
+
+
+
+
+        return actions5;
+    }
 }
