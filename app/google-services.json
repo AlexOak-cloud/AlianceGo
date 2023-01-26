@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "233845677172",
+    "project_id": "aliancego",
+    "storage_bucket": "aliancego.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233845677172:android:aa05feecf38849bced4521",
+        "android_client_info": {
+          "package_name": "com.example.aliancego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233845677172-b64atmb6t5aa5qg1ss7f2m1uu8ooauic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aliancego",
+            "certificate_hash": "9a9d2968bab259dc8ab5c66ff66fdee4d261e2ca"
+          }
+        },
+        {
+          "client_id": "233845677172-uh8odt4cm0ca0rremadoru7t21k0mpm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAXaPN2mv1hW58zjOb_kli7bq5yzdfmK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233845677172-2bkg9uo2vrhe0u10c7n3vb3ek8g5dcu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
