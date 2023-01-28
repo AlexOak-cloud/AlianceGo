@@ -24,11 +24,20 @@
         android:textSize="25sp" />
 
     <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:inputType="textPassword"
+        android:layout_below="@id/edit_name"
+        android:hint="@string/password_text"
+        android:textSize="25sp" />
+
+    <EditText
         android:id="@+id/edit_lastname"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:layout_below="@id/edit_name"
-        android:hint="@string/lastname_text"
+        android:layout_below="@id/edit_password"
+        android:hint="@string/name_text"
         android:textSize="25sp" />
 
     <Button
@@ -37,4 +46,10 @@
         android:layout_height="80sp"
         android:layout_below="@+id/edit_lastname"
         android:text="@string/text_registration" />
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/button_create"
+        android:text="@string/back_text" />
 </RelativeLayout>

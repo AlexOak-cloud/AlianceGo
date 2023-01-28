@@ -20,4 +20,6 @@
     <string name="text_registration">REGISTRATION</string>
     <string name="name_text">name</string>
     <string name="lastname_text">lastname</string>
+    <string name="back_text">back</string>
+    <string name="password_text">password</string>
 </resources>

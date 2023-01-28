@@ -37,6 +37,13 @@
         android:layout_height="80sp"
         android:layout_below="@+id/edit_password"
         android:text="@string/go_text" />
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/go_button"
+        android:text="@string/back_text" />
+
 
 
 </RelativeLayout>
