@@ -44,6 +44,25 @@
         android:textSize="48sp" />
 
     <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginHorizontal="30sp"
+        android:layout_below="@+id/textView2"
+        android:text="@string/button_input"
+        android:layout_marginTop="50sp"
+        android:id="@+id/button_input"
+        />
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="230sp"
+        android:layout_below="@+id/textView2"
+        android:text="@string/button_registrtion"
+        android:layout_marginTop="50sp"
+        android:id="@+id/button_registration"
+        />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="120dp"
