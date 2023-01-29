@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_element"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
@@ -44,23 +45,22 @@
         android:textSize="48sp" />
 
     <Button
+        android:id="@+id/button_signIn"
         android:layout_width="150sp"
         android:layout_height="50sp"
+        android:layout_below="@+id/textView2"
         android:layout_marginHorizontal="30sp"
-        android:layout_below="@+id/textView2"
-        android:text="@string/button_input"
         android:layout_marginTop="50sp"
-        android:id="@+id/button_input"
-        />
+        android:text="@string/button_input" />
+
     <Button
+        android:id="@+id/button_registration"
         android:layout_width="150sp"
         android:layout_height="50sp"
-        android:layout_marginStart="230sp"
         android:layout_below="@+id/textView2"
-        android:text="@string/button_registrtion"
+        android:layout_marginStart="230sp"
         android:layout_marginTop="50sp"
-        android:id="@+id/button_registration"
-        />
+        android:text="@string/button_registrtion" />
 
     <Button
         android:id="@+id/button"

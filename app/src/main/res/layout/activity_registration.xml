@@ -16,7 +16,7 @@
         android:textSize="40sp" />
 
     <EditText
-        android:id="@+id/edit_name"
+        android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="80sp"
         android:layout_below="@id/text_registration"
@@ -24,27 +24,27 @@
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="80sp"
         android:inputType="textPassword"
-        android:layout_below="@id/edit_name"
+        android:layout_below="@id/editName"
         android:hint="@string/password_text"
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/edit_lastname"
+        android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:layout_below="@id/edit_password"
-        android:hint="@string/name_text"
+        android:layout_below="@id/editPassword"
+        android:hint="@string/email_text"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_create"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:layout_below="@+id/edit_lastname"
+        android:layout_below="@+id/editEmail"
         android:text="@string/text_registration" />
     <Button
         android:id="@+id/back_button"
