@@ -16,7 +16,7 @@
         android:textSize="40sp" />
 
     <EditText
-        android:id="@+id/editName"
+        android:id="@+id/editNameForRegistration"
         android:layout_width="match_parent"
         android:layout_height="80sp"
         android:layout_below="@id/text_registration"
@@ -24,32 +24,41 @@
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/editPasswordForRegistration"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:inputType="textPassword"
-        android:layout_below="@id/editName"
+        android:layout_below="@id/editNameForRegistration"
         android:hint="@string/password_text"
+        android:inputType="textPassword"
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editEmailForRegistration"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:layout_below="@id/editPassword"
+        android:layout_below="@id/editPasswordForRegistration"
         android:hint="@string/email_text"
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/button_create"
+        android:id="@+id/button_registration"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:layout_below="@+id/editEmail"
+        android:layout_below="@+id/editEmailForRegistration"
         android:text="@string/text_registration" />
+
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/button_back"
         android:layout_width="match_parent"
         android:layout_height="80sp"
-        android:layout_below="@+id/button_create"
+        android:layout_below="@+id/button_registration"
         android:text="@string/back_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/exemple_text"
+        android:layout_below="@+id/button_back"
+        android:textSize="40sp"
+        />
 </RelativeLayout>
