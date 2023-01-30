@@ -3,8 +3,7 @@
     <string name="MainSearchText1" translatable="false">Выберите</string>
     <string name="MainSearchText2" translatable="false">Комплекс</string>
     <string name="MainSearchText3" translatable="false">Тренеровок</string>
-    <string name="SearchButtonOne" translatable="false">Комплексный подход</string>
-    <string name="SearchButtonTwo" translatable="false">Прогрессивная тренеровка</string>
+    <string name="SearchButtonOne" translatable="false">Составим тренеровку</string>
     <string name="RunToday" translatable="false">Тренировка на сегодня</string>
     <string name="GoText" translatable="false">Приступим</string>
     <string name="NameTrain" translatable="false">Названия упражнения</string>
@@ -16,7 +15,7 @@
     <string name="input_text">INPUT</string>
     <string name="login_text">login</string>
     <string name="edit_password">password</string>
-    <string name="go_text">go</string>
+    <string name="go_text">GO</string>
     <string name="text_registration">REGISTRATION</string>
     <string name="name_text">name</string>
     <string name="lastname_text">lastname</string>

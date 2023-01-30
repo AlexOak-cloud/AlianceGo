@@ -1,91 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_element"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/backgroundmain2"
     tools:context=".MainActivity">
-
-
-    <TextView
-        android:id="@+id/MainSearchText"
-        android:layout_width="match_parent"
-
-        android:layout_height="70sp"
-        android:layout_marginTop="20sp"
-        android:fontFamily="@font/main_fonts"
-        android:text="@string/MainSearchText1"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="70sp"
-        android:layout_below="@id/MainSearchText"
-        android:fontFamily="@font/main_fonts"
-        android:text="@string/MainSearchText2"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="70sp"
-        android:layout_below="@id/textView"
-        android:fontFamily="@font/main_fonts"
-        android:text="@string/MainSearchText3"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp" />
-
-    <Button
-        android:id="@+id/button_signIn"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_below="@+id/textView2"
-        android:layout_marginHorizontal="30sp"
-        android:layout_marginTop="50sp"
-        android:text="@string/button_input" />
-
-    <Button
-        android:id="@+id/button_registration"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_below="@+id/textView2"
-        android:layout_marginStart="230sp"
-        android:layout_marginTop="50sp"
-        android:text="@string/button_registrtion" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_below="@+id/textView2"
-        android:layout_marginHorizontal="30sp"
-        android:layout_marginTop="150sp"
-        android:backgroundTint="#FF5252"
-        android:fontFamily="@font/main_fonts"
-        android:onClick="butClick"
-        android:text="@string/SearchButtonOne"
-        android:textSize="34sp" />
+        android:layout_width="141dp"
+        android:layout_height="112dp"
+        android:fontFamily="@font/font"
+        android:text="@string/go_text"
+        android:textColor="#FF6600"
+        android:textSize="115sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_below="@+id/button"
-        android:layout_marginHorizontal="30sp"
-        android:layout_marginTop="40sp"
-        android:backgroundTint="#7C4DFF"
-        android:fontFamily="@font/main_fonts"
-        android:text="@string/SearchButtonTwo"
-        android:textSize="34sp" />
-
-
-</RelativeLayout>
+        android:layout_width="354dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/buttonfont"
+        android:onClick="butClick"
+        android:text="@string/SearchButtonOne"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
