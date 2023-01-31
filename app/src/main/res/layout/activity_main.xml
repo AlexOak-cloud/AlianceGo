@@ -6,16 +6,17 @@
     android:id="@+id/root_element"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundmain2"
+    android:background="@drawable/backgroundmain1"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="141dp"
         android:layout_height="112dp"
+        android:layout_marginEnd="268dp"
         android:fontFamily="@font/font"
         android:text="@string/go_text"
-        android:textColor="#FF6600"
+        android:textColor="#2C2C2C"
         android:textSize="115sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#000000"
+    android:background="@drawable/backgroundmain2dark"
     tools:context=".WorkActivity">
 
     <TextView
@@ -13,11 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="120sp"
         android:layout_marginTop="60dp"
-        android:fontFamily="@font/main_fonts"
+        android:fontFamily="@font/buttonfont"
         android:text="@string/RunToday"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="48sp" />
+        android:textSize="34sp" />
 
     <TextView
         android:id="@+id/actionsList"
@@ -36,7 +35,8 @@
         android:layout_height="60dp"
         android:layout_below="@+id/actionsList"
         android:layout_marginHorizontal="30sp"
-
+        android:layout_marginTop="65sp"
+        android:backgroundTint="#F44336"
         android:fontFamily="@font/main_fonts"
         android:onClick="butClickTwo"
         android:text="@string/GoText"
