@@ -27,20 +27,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".InputActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".TrainingActivity"
             android:exported="false">
             <meta-data
