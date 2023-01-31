@@ -52,4 +52,12 @@
         android:fontFamily="@font/main_fonts"
         android:text="@string/VideoTrain"
         android:textSize="34sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@id/textView6"
+        android:layout_marginHorizontal="50sp"
+        android:text="test timer"
+        android:id="@+id/btnTestTimer"/>
 </RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+
+    <ProgressBar
+        android:id="@+id/testBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="40sp" />
+
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/testBar"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="-3dp"
+        android:text="@string/test_text"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_below="@+id/testText"
+        android:layout_marginHorizontal="70sp"
+        android:text="@string/go_text"
+        android:id="@+id/testButton"/>
+
+</RelativeLayout>
