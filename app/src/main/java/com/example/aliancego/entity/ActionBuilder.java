@@ -3,7 +3,7 @@ package com.example.aliancego.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ActionCreater {
+public class ActionBuilder {
     public List<Action> listWorkout1() {
         List<Action> actions = new ArrayList<>();
 

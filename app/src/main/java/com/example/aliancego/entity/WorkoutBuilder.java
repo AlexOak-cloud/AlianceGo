@@ -1,13 +1,11 @@
-package com.example.aliancego.workoutBuilder;
-
-import com.example.aliancego.entity.Action;
+package com.example.aliancego.entity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-
 public class WorkoutBuilder {
+
     public static final Random random = new Random();
 
     /** Этот метод, случайным образом, собирает тренероаки из принятых им списков */
