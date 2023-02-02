@@ -34,22 +34,10 @@ public class WorkActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.button_back);
 
         WorkoutBuilder workoutBuilder = new WorkoutBuilder();
-        ActionBuilder actionBuilder = new ActionBuilder();
-        List<Action> actions = workoutBuilder.generateWorkout(actionBuilder.listWorkout1(), 1,
-                actionBuilder.listWorkout2(), 2,
-                actionBuilder.listWorkout3(), 3,
-                actionBuilder.listWorkout4(), 2,
-                actionBuilder.listWorkout5(), 2);
-
-
-        List<String> forShow = new ArrayList<>();
-        for(Action tmp: actions){
-            forShow.add(tmp.getName() + ": " + tmp.getTime() + " секунд");
-        }
-
-
+        List<Action> actions = workoutBuilder.generateWorkout();
+        List<String> showList = workoutBuilder.showList(actions);
         ArrayAdapter<String> adapter = new ArrayAdapter<>
-                (this, android.R.layout.simple_list_item_1, forShow);
+                (this, android.R.layout.simple_list_item_1, showList);
 
 
         list.setAdapter(adapter);
