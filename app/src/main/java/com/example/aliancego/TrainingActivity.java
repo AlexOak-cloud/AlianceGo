@@ -32,46 +32,20 @@ public class TrainingActivity extends AppCompatActivity {
         WorkoutBuilder workoutBuilder = new WorkoutBuilder();
         List<Action> actions = workoutBuilder.getList();
 
-        for (int i = 0; i < actions.size(); i++) {
-            Action action = actions.get(i);
+        /** LIFO or FIFO */
 
+        for (Action action : actions) {
+            nameAction.setText(action.getName());
 
-        }
-
-
-        CountDownTimer timer = new CountDownTimer(45000, 1000) {
-            @Override
-            public void onTick(long l) {
-                timerView.setText("" + l / 1000);
-                progressBar.setProgress((int) (l / 1000));
-
-            }
-
-            @Override
-            public void onFinish() {
-                timerView.setText("-");
-
-            }
-        };
-        timer.start();
-
-
-    }
-
-    public void executing(List<Action> actions) {
-
-
-        for (int i = 0; i < actions.size(); i++) {
-            nameAction.setText(actions.get(i).getName());
-
-            int finalI = i;
-            CountDownTimer timer = new CountDownTimer(actions.get(finalI).getTime() * 1000L, 1000) {
+            CountDownTimer timer = new CountDownTimer
+                    (action.getTime() * 1000L, 1000) {
                 @Override
                 public void onTick(long l) {
-                    progressBar.setMax(actions.get(finalI).getTime());
+                    progressBar.setMax(action.getTime());
                     timerView.setText("" + l / 1000);
                     progressBar.setProgress((int) (l / 1000));
                 }
+
                 @Override
                 public void onFinish() {
                 }
@@ -79,6 +53,27 @@ public class TrainingActivity extends AppCompatActivity {
             timer.start();
         }
     }
+
+
+//    CountDownTimer timer = new CountDownTimer(45000, 1000) {
+//        @Override
+//        public void onTick(long l) {
+//            timerView.setText("" + l / 1000);
+//            progressBar.setProgress((int) (l / 1000));
+//
+//        }
+//
+//        @Override
+//        public void onFinish() {
+//            timerView.setText("-");
+//
+//        }
+//
+//    };
+
+
+
+
 }
 
 
