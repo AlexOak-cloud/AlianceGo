@@ -19,9 +19,11 @@ public class WorkoutBuilder {
           List<Action> list5 = actionBuilder.listWorkout5();
           rtnList.addAll(build(list1,1));
           rtnList.addAll(build(list2,2));
-          rtnList.addAll(build(list3,2));
-          rtnList.addAll(build(list4,3));
-          rtnList.addAll(build(list5,2));
+          rtnList.addAll(build(list3,1));
+          rtnList.addAll(build(list2,2));
+          rtnList.addAll(build(list4,1));
+          rtnList.addAll(build(list2,2));
+          rtnList.addAll(build(list5,1));
           return rtnList;
       }
 

@@ -12,16 +12,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.aliancego.entity.Action;
-import com.example.aliancego.entity.ActionBuilder;
-import com.example.aliancego.entity.Workout;
 import com.example.aliancego.entity.WorkoutBuilder;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class WorkActivity extends AppCompatActivity {
+public class RunUpActivity extends AppCompatActivity {
 
-    private TextView actionList;
     private Button btnBack;
     private ListView list;
 
@@ -29,34 +25,30 @@ public class WorkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_work);
+        setContentView(R.layout.activity_runup);
         list = findViewById(R.id.list);
         btnBack = findViewById(R.id.button_back);
 
+        /** Создание списка упражнений -> */
         WorkoutBuilder workoutBuilder = new WorkoutBuilder();
         List<Action> actions = workoutBuilder.generateWorkout();
         List<String> showList = workoutBuilder.showList(actions);
         ArrayAdapter<String> adapter = new ArrayAdapter<>
                 (this, android.R.layout.simple_list_item_1, showList);
-
-
         list.setAdapter(adapter);
 
-
+        /** Нажатие на кнопку "Назад" -> */
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(WorkActivity.this,MainActivity.class));
+                startActivity(new Intent(RunUpActivity.this,MainActivity.class));
             }
         });
-
-
     }
 
 
     public void butClickTwo(View v) {
         Intent intent = new Intent(this, TrainingActivity.class);
         startActivity(intent);
-
     }
 }

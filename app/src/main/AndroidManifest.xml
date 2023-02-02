@@ -20,13 +20,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".StartTrainingActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".StartActivity"
             android:exported="false">
             <meta-data
@@ -41,7 +34,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".WorkActivity"
+            android:name=".RunUpActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -17,12 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
 
     public void butClick(View v) {
-        Intent intent = new Intent(this, WorkActivity.class);
+        Intent intent = new Intent(this, RunUpActivity.class);
         startActivity(intent);
     }
 
