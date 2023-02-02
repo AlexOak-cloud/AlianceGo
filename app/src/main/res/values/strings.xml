@@ -19,7 +19,7 @@
     <string name="text_registration">REGISTRATION</string>
     <string name="name_text">name</string>
     <string name="lastname_text">lastname</string>
-    <string name="back_text">back</string>
+    <string name="back_text">Назад</string>
     <string name="password_text">password</string>
     <string name="email_text">email</string>
     <string name="test_text">test</string>

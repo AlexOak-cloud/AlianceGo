@@ -7,17 +7,13 @@ import java.util.Objects;
 
 public class Action {
 
-    private int id;
     private String name;
-    private String description;
     private int time;
 
     @Override
     public String toString() {
         return "Action{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
+                "name='" + name + '\'' +
                 ", time=" + time +
                 '}';
     }
@@ -27,20 +23,12 @@ public class Action {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Action action = (Action) o;
-        return id == action.id && time == action.time && Objects.equals(name, action.name) && Objects.equals(description, action.description);
+        return time == action.time && Objects.equals(name, action.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, time);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        return Objects.hash(name, time);
     }
 
     public String getName() {
@@ -49,14 +37,6 @@ public class Action {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public int getTime() {
@@ -70,12 +50,8 @@ public class Action {
     public Action() {
     }
 
-    public Action(int id, String name, String description, int time) {
-        this.id = id;
+    public Action(String name, int time) {
         this.name = name;
-        this.description = description;
         this.time = time;
     }
-
-
 }
