@@ -18,6 +18,9 @@ public class TrainingActivity extends AppCompatActivity {
     public TextView nameAction;
     public TextView timerView;
     public ProgressBar progressBar;
+    public static final WorkoutBuilder workoutBuilder = new WorkoutBuilder();
+    public static final List<Action> actions = workoutBuilder.getList();
+    public static int i = 0;
 
 
     @SuppressLint("MissingInflatedId")
@@ -29,29 +32,36 @@ public class TrainingActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         nameAction = findViewById(R.id.nameAction);
 
-        WorkoutBuilder workoutBuilder = new WorkoutBuilder();
-        List<Action> actions = workoutBuilder.getList();
-
         /** LIFO or FIFO */
+        loop();
+    }
 
-        for (Action action : actions) {
-            nameAction.setText(action.getName());
 
-            CountDownTimer timer = new CountDownTimer
-                    (action.getTime() * 1000L, 1000) {
-                @Override
-                public void onTick(long l) {
-                    progressBar.setMax(action.getTime());
-                    timerView.setText("" + l / 1000);
-                    progressBar.setProgress((int) (l / 1000));
-                }
-
-                @Override
-                public void onFinish() {
-                }
-            };
-            timer.start();
+    public void loop(){
+        for (; i < actions.size(); i++) {
+            nameAction.setText(actions.get(i).getName());
+            startTimer(actions.get(i));
         }
+    }
+
+
+    public void startTimer(Action action){
+        CountDownTimer timer = new CountDownTimer
+                (action.getTime() * 1000L, 1000) {
+            @Override
+            public void onTick(long l) {
+                progressBar.setMax(action.getTime());
+                timerView.setText("" + l / 1000);
+                progressBar.setProgress((int) (l / 1000));
+            }
+
+            @Override
+            public void onFinish() {
+                loop();
+            }
+        };
+        timer.start();
+
     }
 
 
