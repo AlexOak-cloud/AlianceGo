@@ -32,37 +32,29 @@ public class TrainingActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         nameAction = findViewById(R.id.nameAction);
 
-        /** LIFO or FIFO */
-        loop();
-    }
+        for(Action action : actions){
+            nameAction.setText(action.getName());
 
+            CountDownTimer timer = new CountDownTimer
+                    (action.getTime() * 1000L, 1000) {
+                @Override
+                public void onTick(long l) {
+                    progressBar.setMax(action.getTime());
+                    timerView.setText("" + l / 1000);
+                    progressBar.setProgress((int) (l / 1000));
+                }
 
-    public void loop(){
-        for (; i < actions.size(); i++) {
-            nameAction.setText(actions.get(i).getName());
-            startTimer(actions.get(i));
+                @Override
+                public void onFinish() {
+
+                }
+            };
+            timer.start();
         }
+        /** LIFO or FIFO */
     }
 
 
-    public void startTimer(Action action){
-        CountDownTimer timer = new CountDownTimer
-                (action.getTime() * 1000L, 1000) {
-            @Override
-            public void onTick(long l) {
-                progressBar.setMax(action.getTime());
-                timerView.setText("" + l / 1000);
-                progressBar.setProgress((int) (l / 1000));
-            }
-
-            @Override
-            public void onFinish() {
-                loop();
-            }
-        };
-        timer.start();
-
-    }
 
 
 //    CountDownTimer timer = new CountDownTimer(45000, 1000) {
