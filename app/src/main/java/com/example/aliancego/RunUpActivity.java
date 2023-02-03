@@ -30,7 +30,7 @@ public class RunUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_runup);
         list = findViewById(R.id.list);
-        btnBack = findViewById(R.id.button_back);
+
 
         /** Создание списка упражнений -> */
 
@@ -42,13 +42,7 @@ public class RunUpActivity extends AppCompatActivity {
                 (this, android.R.layout.simple_list_item_1, listToString);
         this.list.setAdapter(adapter);
 
-        /** Нажатие на кнопку "Назад" -> */
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(RunUpActivity.this,MainActivity.class));
-            }
-        });
+
     }
 
     public List<String> getListActions(){
