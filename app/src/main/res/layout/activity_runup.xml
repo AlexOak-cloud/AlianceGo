@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundmain2dark"
+    android:background="@drawable/simple_back"
     tools:context=".RunUpActivity">
 
     <TextView
@@ -15,17 +15,17 @@
         android:fontFamily="@font/buttonfont"
         android:text="@string/RunToday"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#FFF"
         android:textSize="34sp" />
 
     <ListView
         android:id="@+id/list"
-        android:background="#70ffffff"
         android:layout_width="match_parent"
         android:layout_height="350sp"
-        android:dividerHeight="3sp"
         android:layout_below="@+id/textView3"
-        android:layout_marginHorizontal="10sp" />
+        android:layout_marginHorizontal="10sp"
+        android:background="#70ffffff"
+        android:dividerHeight="3sp" />
 
     <Button
         android:id="@+id/button2"
@@ -35,20 +35,8 @@
         android:layout_marginHorizontal="30sp"
         android:layout_marginTop="10sp"
         android:backgroundTint="#F44336"
-        android:fontFamily="@font/main_fonts"
+        android:fontFamily="@font/buttonfont"
         android:onClick="butClickTwo"
         android:text="@string/GoText"
-        android:textSize="24sp" />
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/button2"
-        android:layout_marginHorizontal="30sp"
-        android:layout_marginTop="10sp"
-        android:backgroundTint="#F44336"
-        android:fontFamily="@font/main_fonts"
-        android:onClick="butClickTwo"
-        android:text="@string/back_text"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 </RelativeLayout>

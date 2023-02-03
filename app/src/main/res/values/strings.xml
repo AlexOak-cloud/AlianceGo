@@ -23,4 +23,6 @@
     <string name="password_text">password</string>
     <string name="email_text">email</string>
     <string name="test_text">test</string>
+    <string name="autoriz_text">Авторизуйтесь при помощи Google</string>
+
 </resources>
