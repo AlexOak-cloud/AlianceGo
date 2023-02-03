@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/nameAction"
-        android:layout_width="match_parent"
-        android:layout_height="150sp"
+        android:layout_width="381dp"
+        android:layout_height="91dp"
         android:layout_marginHorizontal="20sp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/buttonfont"
@@ -24,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="65sp"
         android:layout_below="@+id/button4"
-        android:fontFamily="@font/main_fonts"
+        android:fontFamily="@font/buttonfont"
+        android:layout_marginTop="125sp"
         android:text="@string/TimeName"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -35,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="100sp"
         android:layout_below="@+id/textTimer"
-        android:fontFamily="@font/main_fonts"
+        android:fontFamily="@font/buttonfont"
         android:text="@string/TimeNumebr"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -43,8 +44,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="250sp"
+        android:layout_width="361dp"
+        android:layout_height="223dp"
         android:layout_below="@+id/nameAction"
         android:layout_marginHorizontal="30sp"
         android:backgroundTint="#3A3A3A"
