@@ -1,6 +1,5 @@
 package com.example.aliancego.entity;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -43,7 +42,7 @@ public class WorkoutBuilder {
     public List<String> listToString(List<Action> localList) {
         List<String> rtnList = new LinkedList<>();
         for (Action tmp : localList) {
-            rtnList.add(tmp.getName() + ": " + tmp.getTime() + " секунд");
+            rtnList.add(tmp.getName() + ": " + tmp.getDuration() + " секунд");
         }
         return rtnList;
     }

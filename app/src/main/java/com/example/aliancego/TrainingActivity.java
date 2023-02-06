@@ -23,7 +23,7 @@ public class TrainingActivity extends AppCompatActivity {
     public static int i = 0;
 
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,30 +31,69 @@ public class TrainingActivity extends AppCompatActivity {
         timerView = findViewById(R.id.timerView);
         progressBar = findViewById(R.id.progressBar);
         nameAction = findViewById(R.id.nameAction);
+        onResume();
 
-        for(Action action : actions){
-            nameAction.setText(action.getName());
 
-            CountDownTimer timer = new CountDownTimer
-                    (action.getTime() * 1000L, 1000) {
-                @Override
-                public void onTick(long l) {
-                    progressBar.setMax(action.getTime());
-                    timerView.setText("" + l / 1000);
-                    progressBar.setProgress((int) (l / 1000));
-                }
 
-                @Override
-                public void onFinish() {
+    }
 
-                }
-            };
-            timer.start();
+    @SuppressLint("SetTextI18n")
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Action action = actions.get(1);
+        nameAction.setText(action.getName());
+        timerView.setText(action.getDuration() + "");
+        for (int i = action.getDuration(); i >= 0; i--) {
+            try {
+                timerView.setText(i + "");
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
-        /** LIFO or FIFO */
+
     }
 
 
+//            for (int j = duration; j >= 0; j--) {
+////                try {
+//                timerView.setText(String.valueOf(j));
+//                    progressBar.setProgress(duration / 1000);
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+
+//            }
+}
+
+
+//        for(Action action : actions){
+//            nameAction.setText(action.getName());
+//
+//            CountDownTimer timer = new CountDownTimer
+//                    (action.getDuration() * 1000L, 1000) {
+//                @Override
+//                public void onTick(long l) {
+//
+//                    progressBar.setMax(action.getDuration());
+//                    timerView.setText("" + l / 1000);
+//                    progressBar.setProgress((int) (l / 1000));
+//                }
+//
+//                @Override
+//                public void onFinish() {
+//                    return;
+//                }
+//            };
+//            timer.start();
+//        }
+/**
+ * LIFO or FIFO
+ */
 
 
 //    CountDownTimer timer = new CountDownTimer(45000, 1000) {
@@ -76,7 +115,6 @@ public class TrainingActivity extends AppCompatActivity {
 
 
 
-}
 
 
 

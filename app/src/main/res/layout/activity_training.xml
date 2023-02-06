@@ -37,7 +37,6 @@
         android:layout_height="100sp"
         android:layout_below="@+id/textTimer"
         android:fontFamily="@font/buttonfont"
-        android:text="@string/TimeNumebr"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="80sp" />
