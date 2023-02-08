@@ -18,6 +18,7 @@ public class TrainingActivity extends AppCompatActivity {
     public TextView nameAction;
     public TextView timerView;
     public ProgressBar progressBar;
+    public TextView test;
     public static final WorkoutBuilder workoutBuilder = new WorkoutBuilder();
     public static final List<Action> actions = workoutBuilder.getList();
     public static int i = 0;
@@ -31,33 +32,40 @@ public class TrainingActivity extends AppCompatActivity {
         timerView = findViewById(R.id.timerView);
         progressBar = findViewById(R.id.progressBar);
         nameAction = findViewById(R.id.nameAction);
-        onResume();
+        test = findViewById(R.id.textTimer);
+        start();
+    }
 
+
+    public void progressWorkout(Action action) {
 
 
     }
 
-    @SuppressLint("SetTextI18n")
-    @Override
-    protected void onResume() {
-        super.onResume();
 
-        Action action = actions.get(1);
+    public void start() {
+        Action action = actions.get(i);
         nameAction.setText(action.getName());
-        timerView.setText(action.getDuration() + "");
-        for (int i = action.getDuration(); i >= 0; i--) {
-            try {
-                timerView.setText(i + "");
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        test.setText(i + "");
+
+        CountDownTimer timer = new CountDownTimer
+                (action.getDuration() * 1000L, 1000) {
+            @Override
+            public void onTick(long l) {
+                progressBar.setMax(action.getDuration());
+                timerView.setText("" + l / 1000);
+                progressBar.setProgress((int) (l / 1000));
             }
 
-        }
-
+            @Override
+            public void onFinish() {
+                start();
+            }
+        };
+        timer.start();
+        i += 1;
     }
-
-
+}
 //            for (int j = duration; j >= 0; j--) {
 ////                try {
 //                timerView.setText(String.valueOf(j));
@@ -68,7 +76,6 @@ public class TrainingActivity extends AppCompatActivity {
 //                }
 
 //            }
-}
 
 
 //        for(Action action : actions){
@@ -91,9 +98,6 @@ public class TrainingActivity extends AppCompatActivity {
 //            };
 //            timer.start();
 //        }
-/**
- * LIFO or FIFO
- */
 
 
 //    CountDownTimer timer = new CountDownTimer(45000, 1000) {
